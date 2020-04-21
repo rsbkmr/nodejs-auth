@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-auth",
+  "version": "0.0.0",
+  "description": "Easy Node.js Authentication Using JWT",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "start:dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsbkme/nodejs-auth.git"
+  },
+  "author": "Rishabh Kumar <rsbkme@gmail.com> (https://rsbkme.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rsbkme/nodejs-auth/issues"
+  },
+  "homepage": "https://github.com/rsbkme/nodejs-auth#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
