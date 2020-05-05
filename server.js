@@ -2,6 +2,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
 import mongoose from "mongoose";
+import authRouter from "./routes/auth.js";
 
 // Init
 const server = express();
@@ -19,6 +20,9 @@ mongoose
   })
   .then(() => console.log("Connected To DB"))
   .catch(() => console.error("Error while Connecting To DB"));
+
+// Routes
+server.use(authRouter);
 
 // Start Listening
 const PORT = process.env.PORT || 5000;
